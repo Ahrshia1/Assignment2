@@ -55,8 +55,7 @@ private VerticalPanel mainPanel = new VerticalPanel();
 	    	  handleError(error);
 	      }
 
-	      public void onSuccess(LoginInfo result) {
-	        loginInfo = result;
+	      public void onSuccess(LoginInfo result)
 	        if(loginInfo.isLoggedIn()) {
     loadStockWatcher();} else {
         loadLogin();
